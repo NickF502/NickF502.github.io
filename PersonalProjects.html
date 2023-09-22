@@ -386,7 +386,7 @@
 
 
 
-        <h2>Word Processor (Work In Progress)</h2>
+        <h2>Word Processor</h2>
         <table class="project-table" id="processor">
 
             <tr>
@@ -512,11 +512,58 @@
 
                         <h3>Process</h3>
                         <p>
-                            I wanted to divide the main JFrame into sections, and have each section contain one core feature. 
+                            I wanted to divide the main JFrame into sections, and have each section contain one core feature. In "Cookie Clicker",
+                            the cookie was on the left side of the screen, with the scoreboard above it. The center of the screen has graphics that display
+                            the number of each building you have. The right side of the screen has the buttons to purchase buildings, with the upgrades
+                            listed above it. I didn't want to copy that layout, not only because it seemed rather complex but also because I didn't have a need
+                            for such a sophisticated layout. I decided to split my screen into five sections: North, East, South, West, and Center. Thankfully
+                            this corresponds perfectly with Java's AWT BorderLayout.
+                        </p>
+
+                        <p>
+                            The first thing I wanted to do was get the basics of the game down; click a button, add a point to the scoreboard. I started with the button by making a class that extends a JButton, setting the image of the button to be an image of a baseball, and adding a MouseListener. Once I ensured that the clicks were being registered, I shifted over to the scoreboard, which was nothing more than a JPanel with some JLabels displaying some basic text. I set the mouseClicked() event on the JButton to update the number of baseballs the player has, and then update the scoreboard to reflect this change.
+                        </p>
+
+                        <p>
+                            Once I had that working, I began to add equipment items, which was my version of the buildings in "Cookie Clicker". After deciding on a few baseball related objects, I began using them to create instances of EquipmentButton, which is a class that extends a JButtons. It feature all the information on an equipment type, such as its name, price, quantity, contribution to the automatically genereated Baseballs per Second (BPS), and a picture of the item. Each button also contains a MouseListener. When clicked, the button runs a check to see if the item can be purchased. If it can, it decreses the user's baseball count by the price, adds one to its quantity count, and updates all related attributes. All of these buttons were in an array for future reference.
+                        </p>
+
+                        <p>
+                            The next step was to display the buttons, which I would do by simply adding them to a JPanel. After creating the EquipmentButtonPanel class, I moved into it the code to create, store, and display each button sequentially, so the least powerful item would be at the top, similar to the original game. I set this panel to the east side of the screen and tested the buttons to ensure that they updated their information appropriately.
+                        </p>
+
+                        <p>
+                            The upgrade system didn't turn out as I had originally planed. I wanted there to be different effects for each piece of equipment, so that some upgrades were a x2 multiplier, while others were a cost reduction or a package of multiple of the equipment. However, this quickly grew too complicated, so I just made all upgrades the x2 multiplier, similar to the original game. The process for creating the UpgradeButtons was nearly identical to the EquipmentButtons. The only difference was that each upgrade button needed to be linked to its corresponding equipment button, so I created a method to find the button by iterating through the EquipmentButtonPanel and retrieving its data.
+                        </p>
+
+                        <p>
+                            The final sections that needed to be developed were the header and footer sections at the top and bottom of the JFrame. I wanted the top to exclusively contain game-related information, so the player wouldn't be distracted by anything. As such, the header primarily contains the scoreboard, which displays the number of baseballs and the current BPS. It also contains an options mode, which provides the user with the ability to start a new game or toggle a "Dark Mode", which turns the colors of the objects in the game darker. The footer contains the very brief credits JLabel and the URL of my website.
+                        </p>
+
+                        <p>
+                            There are many smaller features in the game that I don't have time to elaborate on, such as changing the color of buttons when a purchase is possible, the layouts of the buttons and panels, and the animation on the baseball. However, there are three that I want to call special attention to.
+                        </p>
+
+                        <p>
+                            My favorite part about this project was the art that I created. Pixel art is a hobby of mine that I don't get to induglge in often, so when I realized that I shouldn't be using pictures I found on the internet of baseball bats and helmets, I was elated that I would be creating my own work. Looking at the images used for the equipment, it is apparent that I parodied baseball-related brands, such as Dubble Bubble, Gatorade, Mizuno, Marucci, and others. Many of these were brands that I grew up using when I played baseball, and I wanted to "honor" them by including them in my game. While these were a lot of fun to create, the main baseball is by far my favorite piece of art that I created for this game. I modeled it after an authentic MLB baseball, and I love how it came out. From the signature of the "Commishioner" to the logo at the bottom, I spent hours on making these little details, and I think it came out great.
+                        </p>
+                        
+                        <p>
+                            A game like Baseball Clicker is not meant to be played in a single session. As such, I needed to include some sort of save data system for the game. The very first version of "Cookie Clicker" was easily hacked, as the save data was just a concatination of the amount of each item that was purchased. I wanted to prevent this, so I used a very basic encryption to prevent this from being accomplished so easily. I created a key to use for my encryption/decryption, which was just a number. I stored this key in the first slot of an ArrayList. Then, for every number I needed to save, such as the number of baseballs, the BPS, or the number of equipment or upgrade level, I would multiply that number by the key and store each in a different spot of the ArrayList. The key was randomized every time the game was run, which contributed to its security. I wrote the contents of the ArrayList to a file, saveData.txt, so the data could be loaded in when the user wanted to resume playing. I needed to separate the encrypted numbers in the text file with some sort of delimiter, so that when the data was being read in, the numbers could be decrypted properly. As such, after each index's content was written out to the text file, I appended the zero-width character to make it hard to see at first glance where one number ended and the next began. While this is far from fool-proof, it does add an extra level of security and I had fun doing it.
+                        </p>
+
+                        <p>
+                            In "Cookie Clicker", once numbers reached the millions, they were abbreviated to the form X.XXX M. I wanted to do the same thing, as displaying these large numbers becomes pointless when the smaller digits are changing so rapidly. As such, I needed to come up with a way to display my numbers in that format. I accomplished this using a HashMap to map the power of 10 of a number to its number suffix (M for million, B for Billion, etc.) and a function to properly format the number. This proved to be one of the most difficult parts of the game development process. After searching for a way to accomplish this, I found the library java.text, which contained a class DecimalFormat. Even with this class, I still struggled to get my function to work properly. At first, I couldn't get the decimal point in the number to be a valid delimiter. Once I solved that, more problems arose. Numbers would be displayed with the wrong suffix, the decimal point would disappear at random intervals, and other minor bugs. The biggest issue was the case where a number in the thousands was being displayed. Contrary to the way "Cookie Clicker" displays its thousands, I wanted Baseball Clicker to display the thousands with a decimal point. However, I ran into a problem where sometimes the function would format the number and other times it would leave it. I eventually solved this problem, but it would not surprise me if other problems surrounding the number formatting system were present. If you find one, please let me know so I can fix it!
                         </p>
 
                         <h3>Reflection</h3>
-                        <p></p>
+                        <p>
+                            Despite how in-depth and complex this project is, I still don't feel that this is my best work. I still think Baseball Simulator is a better product, but that isn't to say that this is a poor product by any means. I take pride in the fact that I produced this game rather quickly with a fairly rudimentary understanding of Java, programming, and game development as a whole. However, there are so many areas for improvement. I think that, visually, it is incredibly bland and could use much better graphics. Sound effects and background music would be a very nice addition as well. Additional features, such as a statistics page, achievements, more upgrade and equipment diversity, and customization options would all contribute to a much better game. Maybe I will update it in the future and add some of these features. 
+                        </p>
+
+                        <p>
+                            Compared to previous projects, my commenting in this is a drastic improvement. I learned about JavaDOC basics in class, and since I knew my commenting abilities could use an overhaul, I tried to comment as much as I could while not flooding the files. Looking through it now, it is much easier to follow along, and I was actually able to make some adjustments to the code to improve the efficiency and performance. Again, there is always room for improvement, but I think that I now have a solid foundation for commenting. 
+                        </p>
 
                     </div>
                 </td>
