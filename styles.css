@@ -37,6 +37,7 @@ Custom Tags
     border-bottom: 3px solid black;
     display: flex;
     justify-content: space-evenly;
+    z-index: 5;
 }
 
 /* The list area on the Navigation Bar */
@@ -97,7 +98,10 @@ Custom Tags
 
 
 
-/* The profile picture inside the intro-table */
+
+
+
+/* The profile picture*/
 #pfp {
     resize: both;
     height: 300px;
@@ -105,6 +109,8 @@ Custom Tags
     float: left;
     border: 2px solid black;
 }
+
+
 
 /* All text in "About Me" section */
 .intro {
@@ -116,6 +122,7 @@ Custom Tags
     .intro h2 {
         margin-bottom: 10px;
     }
+
 
 
 
@@ -134,6 +141,14 @@ Custom Tags
         border: none;
     }
 
+    .project-table .ss {
+        resize: both;
+        height: 190px;
+        width: 320px;
+        float: left;
+        border: 2px solid black;
+    }
+
     /* The thumbnail inside a project-table for a project */
     .project-table #thumbnail {
         resize: both;
@@ -147,10 +162,10 @@ Custom Tags
     }
 
     .project-table #thumbnail:hover {
-        transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        transform: scale(2); 
     }
 
-    /* The thumbnail inside a project-table for a project */
+
     .project-table #logo {
         resize: both;
         height: 160px;
@@ -162,6 +177,7 @@ Custom Tags
         pointer-events: none;   /* Disable click events */
         
     }
+
 
     /* Paragraph text inside a project-table */
     .project-table tr p{
@@ -200,6 +216,41 @@ Custom Tags
     }
 
 
+.image-container {
+    position: relative;
+    z-index: 0;
+}
+
+.tooltip {
+    visibility: hidden;
+    position: absolute;
+    bottom: 100%;
+    border: 2px solid black;
+    border-bottom: none;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 3px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+#scires-platform-table tr {
+    text-align: center;
+}
+
+#scires-platform-table img {
+    display: block;
+    margin: 0 auto;
+}
+
+
 
 
 
@@ -215,6 +266,3 @@ Custom Tags
 @media screen and (min-width: 769px) {
     /* CSS for PCs */
 }
-
-
-
