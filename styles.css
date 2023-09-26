@@ -241,13 +241,13 @@ Custom Tags
 }
 
 
-#scires-platform-table tr {
-    text-align: center;
+#scires-platform-table td {
+    text-align: center; /* Center the content inside td */
 }
 
-#scires-platform-table img {
-    display: block;
-    margin: 0 auto;
+#scires-platform-table .image-container {
+    display: inline-block; /* Make the container only as wide as its content */
+    text-align: center; /* Center the content inside the container */
 }
 
 
