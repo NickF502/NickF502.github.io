@@ -118,9 +118,9 @@ Custom Tags
     flex-direction: column;
 }
 
-    /* h2 text in "About Me" section */
-    .intro h2 {
-        margin-bottom: 10px;
+
+    .intro p {
+        font-size: 48px;
     }
 
 
