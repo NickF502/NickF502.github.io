@@ -203,6 +203,12 @@ Custom Tags
         margin: 0;
     }
 
+    #gamepics{
+        resize: both;
+        width: 350px;
+        text-align: center;
+    }
+
     /* Unordered List in course-table */
     #course-table ul{
         list-style-type: none;
