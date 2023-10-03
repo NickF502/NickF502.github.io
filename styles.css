@@ -40,7 +40,7 @@ Custom Tags
 .navbar {
     position: sticky;
     top: 0;
-    width: 100%;
+    width: 100vw;
     background-color: #002a2a;
     font-size: 20px;
     border-bottom: 3px solid black;
@@ -267,21 +267,4 @@ Custom Tags
 #scires-platform-table .image-container {
     display: inline-block; /* Make the container only as wide as its content */
     text-align: center;
-}
-
-
-
-
-
-
-
-
-/* Styles for devices with a maximum width of 768 pixels (typical for tablets and mobiles) */
-@media screen and (max-width: 768px) {
-    /* CSS for mobile devices */
-}
-
-/* Styles for devices with a minimum width of 769 pixels (typical for PCs) */
-@media screen and (min-width: 769px) {
-    /* CSS for PCs */
 }
