@@ -48,6 +48,7 @@ Custom Tags
     justify-content: space-evenly;
     z-index: 5;
     text-align: center;
+    max-width: 100%;
 }
 
 /* The list area on the Navigation Bar */
@@ -146,6 +147,7 @@ Custom Tags
     margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 55px;
+    max-width: 100%;
 }
 
     /* FIXME: Change resize from px to % or vw */
@@ -195,6 +197,7 @@ Custom Tags
     margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 55px;
+    max-width: 100%;
 }
 
     .course-table img {
