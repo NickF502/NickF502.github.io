@@ -2,6 +2,8 @@
     font-family: 'Cascadia Code';
 }
 
+/*lighter*/
+
 /* Body */
 body {
     margin: 0;
@@ -28,6 +30,10 @@ h1, h2, h3 {
 p {
     text-indent: 20px;
     text-align: justify;
+}
+
+table {
+    background-color: #8fc2ff;
 }
 
 /*
