@@ -5,7 +5,7 @@
 /* Body */
 body {
     margin: 0;
-    background: #b4d6ff;
+    background: #97bbd2;
     text-align: left;
 }
 
@@ -27,11 +27,11 @@ h1, h2, h3 {
 /* Paragraphs */
 p {
     text-indent: 20px;
-    text-align: justify;
+    text-align: left;
 }
 
 table {
-    background-color: #8fc2ff;
+    background-color: #adcaee;
 }
 
 /*
@@ -136,7 +136,7 @@ Custom Tags
 
     .intro p {
         text-indent: 40px;
-        font-size: 36px;
+        font-size: 32px;
     }
 
 #welcome {
@@ -269,10 +269,17 @@ Custom Tags
 
 .pfp {
     resize: both;
-    height: 300px;
-    width: 225px;
+    height: 200px;
+    width: 200px;
     float: left;
     border: 2px solid black;
+}
+
+.metsLogo {
+    resize: both;
+    height: 200px;
+    width: 200px;
+    float: left;
 }
 
 .image-container {
