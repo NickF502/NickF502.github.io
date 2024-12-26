@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Science Research Project</title>
+        <link href="styles.css" rel="stylesheet" />
+
+    </head>
+
+
+
+    <body>
+
+
+        <!--Navigation Bar at the top of the screen-->
+        <nav class="navbar">
+
+            <ul class="navbar-list">
+
+                <!--Home Tab-->
+                <li class="main-tab"><a href="index.html">Home</a></li>
+
+                <!--Contact Tab-->
+                <li class="main-tab">
+                    <a>Contact</a>
+
+                    <!-- Dropdown menu for Contact Tab-->
+                    <div class="dropdown-menu">
+
+                        <!--LinkedIn Link-->
+                        <a href="https://www.linkedin.com/in/nicholas-farkash/" class="subtab" target="_blank">LinkedIn</a>
+
+                        <!--Email Link-->
+                        <a href="mailto:nfarkash502@gmail.com" class="subtab">Email Me</a>
+
+                        <!--Resume-->
+                        <a href="Documents/Nicholas Farkash - Resume.pdf" class="subtab" target="_blank">Résumé</a>
+
+                    </div>
+
+                </li>
+
+                <!-- CS Projects Tab-->
+                <li class="main-tab">
+                    <a>CS Projects</a>
+
+                    <div class="dropdown-menu">
+
+                        <!-- Science Research Projects-->
+                        <a href="ScienceResearchProjects.html" class="subtab">Science Research</a>
+
+                        <!--Academic Projects-->
+                        <a href="AcademicProjects.html" class="subtab">Academic Projects</a>
+
+                        <!--Personal Projects-->
+                        <a href="PersonalProjects.html" class="subtab">Personal Projects</a>
+
+                    </div>
+
+                </li>
+
+
+
+                <!-- Other Works Tab-->
+                <li class="main-tab">
+                    <a>Other Works</a>
+
+                    <div class="dropdown-menu">
+
+                        <!-- Writings -->
+                        <a href="https://stonybrook.digication.com/nicholas-farkash" class="subtab" target="_blank">Essays</a>
+
+                    </div>
+
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+        <h1>Science Research (2018-2020)</h1>
+
+        <!--Intro to Science Research-->
+        <div id="scires-intro">
+
+            <table class="project-table">
+                <tr>
+
+                    <td>
+                        <div class="image-container">
+
+                            <a href="Images/SciRes/1-MC.png" target="_blank">
+                                <img src="Images/SciRes/1-MC.png" alt="MC 1" class="pfp" />
+                                <div class="tooltip">
+                                    Main character from the first game (2D Platformer)
+                                </div>
+                            </a>
+
+                        </div>
+                    </td>
+
+                    <td>
+                        <p>
+                            My experience in programming began when I was a sophomore in high school. Before the summer leading into my junior year, I approached the head of the science department and inquired about the SUNY Albany Affiliated High School Science Research Program that some of my classmates were in. I wasn't sure what topic I wanted to research, but I always had an interest in the STEM field. I had a wide array of personal interests, but ultimately I decided on video game development.
+                        </p>
+
+                        <p>
+                            The program was rigorous, as it required a lot of time spent outside of class finding and reading peer-reviewed articles, learning how to code (I had no experience going into these projects), and creating a posterboard and presentation. Despite all of this work, I had a lot of fun sitting in the research room during study hall and lunch periods talking with peers as I worked. I made many friends, received a new perspective on the field of computer science, and learned a lot from my research mates. I credit this program with fueling my passion for STEM and keeping me motivated to continue learning.
+                        </p>
+
+                        <p>
+                            Featured below are each of the two projects that I created while researching video game development. Unfortunately, both projects were destroyed in a hard drive failure on my old laptop, and I failed to store a backup of them anywhere since I didn't intend on pursuing a future in video game development at the time. This is one of the biggest regrets of my life, as I put a lot of time into these projects and thoroughly enjoyed my time working on them. Although the games no longer exist, some fragments of them live on through various screenshots and GIFs I included in my symposium presentations.
+                        </p>
+                    </td>
+
+                    <td>
+                        <div class="image-container">
+
+                            <a href="Images/SciRes/2-MC.png" target="_blank">
+                                <img src="Images/SciRes/2-MC.png" alt="MC 1" class="pfp" />
+                                <div class="tooltip">
+                                    Main character from the second game (RPG)
+                                </div>
+                            </a>
+
+                        </div>
+                    </td>
+
+                </tr>
+            </table>
+
+        </div>
+
+        <!-- Platformer Game -->
+        <div class="platformer">
+
+            <h2>Junior Year - 2D Platformer Game</h2>
+
+            <table class="project-table" id="scires-platform-table">
+
+                <tr>
+                    <td colspan="3">
+                        <p>
+                            The game I worked on for my junior year was a basic 2D platformer. Since I had no experience in programming, I knew that I wouldn't be able to create a game from scratch. I followed some YouTube videos from a channel called <a href="https://www.youtube.com/@Brackeys" target="_blank">Brackeys</a> to learn how to do pretty much everything. This channel was invaluable to both the creation of my projects and my desire to learn. I would follow alongside the videos, creating games as I learned about the process. This was not a great way to learn how to program, but it was a good way to learn about the process behind video game development.
+                        </p>
+
+                        <p>
+                            The game itself was very straightforward. There were two levels: the first was a practice level that I used to teach myself how to build levels, while the second was the level that I showcased during the end-of-the-year symposium. Inside a level, the player could control a knight character and navigate the level in an attempt to reach the end. The knight could walk and run left and right, jump, and slide. I fiddled with some settings to enable a PlayStation 4 controller to be used in addition to the keyboard. The knight had animation cycles for each of his actions, as shown in one of the images below. There was also an attacking animation which I implemented later in development, but I never got around to adding any enemies to fight. The movement in the game was very fun, in part thanks to a bug that I turned into a feature. The script that controls whether the player is allowed to jump or not couldn't tell the difference between a wall and a floor. As such, if the knight was pressed up against a wall, the player could jump repeatedly and ascend the wall, gaining velocity with each jump. I found it to be extremely fun to launch my character in the air and try to land him on a small platform, so I decided to keep it in. I even constructed a section of the showcase level around this movement.
+                        </p>
+
+                        <p>
+                            All of the graphics in the game were created by me, with the exception of the knight character and his animation frames. There were simply too many animations to create and I didn't have the time or artistic ability to create them all, so I found and downloaded a <a href="https://assetstore.unity.com/packages/2d/characters/knight-sprite-sheet-free-93897" target="_blank">character sprite sheet</a> from UNITY's asset store. For the rest of the graphics, I drew inspiration from pixel art I found online. I also created a song for the game, which played on a loop while running. This sound file does not exist anymore, but I will never forget how it sounded thanks to the hours I listened to it while playtesting the game.
+                        </p>
+
+                        <p>
+                            Both of my games were created using the UNITY game engine. As a pure beginner, I was overwhelmed by how expansive UNITY was. If it weren't for the video tutorials I followed, I would have been completely lost. Despite this initial shock, after using it for an extended period of time I became very comfortable with the basic operations for game development. If I were to go back to it with my current understanding of programming, I feel confident that I would be able to create a very good game entirely from scratch. Although this game was nothing more than running around in a playground, it was a lot of fun to make and was a great first project to serve as an introduction to video game development.
+                        </p>
+
+                        <p>
+
+                            <ul style="list-style-type: none;">
+                                <li>
+                                    <a href="Documents/SciRes/Junior Year Presentation.pdf" target="_blank">
+                                        Link to Presentation Slideshow
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="Documents/SciRes/Junior Year Presentation Script.pdf" target="_blank">
+                                        Link to Presentation Script
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </p>
+
+                        <p>
+                        </p>
+                    </td>
+                </tr>
+
+                <!--Row 1 of Images-->
+                <tr>
+
+                    <td>
+
+                        <div class="image-container">
+
+                            <a href="Images/SciRes/1-Title.png" target="_blank">
+                                <img src="Images/SciRes/1-Title.png" alt="Title" class="ss" />
+                                <div class="tooltip">
+                                    A screenshot from the game
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </td>
+
+                    <td>
+                        <div class="image-container">
+
+                            <a href="Images/SciRes/1-Assets.png" target="_blank">
+                                <img src="Images/SciRes/1-Assets.png" alt="Assets" class="ss" />
+                                <div class="tooltip">
+                                    The UNITY layout with the asset folder's contents
+                                </div>
+                            </a>
+
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="image-container">
+
+                            <a href="Images/SciRes/1-GroundTiles.png" target="_blank">
+                                <img src="Images/SciRes/1-GroundTiles.png" alt="GroundTiles" class="ss" />
+                                <div class="tooltip">
+                                    Some tiles used to create the game world
+                                </div>
+                            </a>
+
+                        </div>
+                    </td>
+
+                </tr>
+
+                <!--Row 2 of Images-->
+                <tr>
+                    <td>
+                        <div class="image-container">
+
+                            <a href="Images/SciRes/1-Animation.png" target="_blank">
+                                <img src="Images/SciRes/1-Animation.png" alt="Animation" class="ss" />
+                                <div class="tooltip">
+                                    The animation tree for the character
+                                </div>
+                            </a>
+
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="image-container">
+
+                            <a href="Images/SciRes/1-CharCon.png" target="_blank">
+                                <img src="Images/SciRes/1-CharCon.png" alt="CharCon" class="ss" />
+                                <div class="tooltip">
+                                    Some code from the Character Controller Script
+                                </div>
+                            </a>
+
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="image-container">
+
+                            <a href="Images/SciRes/1-PlayerMove.png" target="_blank">
+                                <img src="Images/SciRes/1-PlayerMove.png" alt="PlayerMove" class="ss" />
+                                <div class="tooltip">
+                                    The Player_Movement script used to control movement and animation
+                                </div>
+                            </a>
+
+                        </div>
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- RPG Game -->
+        <div class="rpg">
+
+            <h2>Senior Year - RPG Game</h2>
+
+            <table class="project-table" id="scires-platform-table">
+
+                <tr>
+                    <td colspan="3">
+                        <p>
+                            For my second-year game, I wanted to go in a different direction. I was looking through UNITY’s asset store one day and came across "<a href="https://assetstore.unity.com/packages/templates/tutorials/creator-kit-rpg-149309" target="_blank">Creator Kit: RPG</a>", an asset bundle that looked really interesting. It contained some character sprites for animations, items to interact with, and a tileset to create the world with, as well as all the scripts necessary to run the game. I downloaded it and began playing around with it to see what it had to offer. After a few hours of having fun setting up a little fantasy town, I realized that I could turn this game world into my second project.
+                        </p>
+
+                        <p>
+                            From there, I continued to expand the town I had created. Compared to the first game, the world creation in this RPG game was done in a more "professional" way. Included in the asset bundle was a tileset containing all placeable tiles. These tiles could be joined together to form paths, fields, houses, lakes, and more. Each tile came with its own attributes, such as colliders and opacity. For example, the roof tile had no collision but could be scaled and stretched to fit the shape of any building, and if the player stepped underneath a roof, it would turn invisible and allow the player to see into the building. I utilized the tileset shown below to construct an enchanting game world for the player to explore.
+                        </p>
+
+                        <p>
+                            However, a game needs more than a world to walk around in. This is an RPG game, and what kind of RPG game doesn't have a quest feature? The asset bundle came packaged with all of the scripts required to create quests. I created three quests for the player to complete. The first involved finding the lost axe of an NPC and then collecting some golden apples for him. The second involved retrieving stolen pots that were scattered throughout the world. The third quest was never fully incorporated into the game, but it involved a battle system, which will be explained shortly. It was very simple to create and manage quests, and a lot of fun to do at that. Of course, if there are retrieval quests to complete, then there must be an inventory system to obtain those items. Once again, the asset bundle is a complete package, boasting a built-in inventory system. This feature handled the picking up and management of items in the player's possession. It even could be extended to items brought in from outside the bundle, such as the NPC's axe which I created. This asset bundle was a huge help for a novice like me, and a lot of fun to work with as well.
+                        </p>
+
+                        <p>
+                            This is not to say that I exclusively used the asset bundle. There were some assets it did not contain that I wanted to include in the game. As previously mentioned, I programmed one of the quests to revolve around finding an NPC's axe. There was no axe asset in the bundle, so I created it myself. Although this wasn’t a major addition, there were two significant features I wanted to add. The first was a menu system, as I wanted to incorporate a pause menu and a main menu. However, I still lacked the knowledge to do this on my own, so I needed to follow along with YouTube videos to learn how to accomplish this (again, I give credit to <a href="https://www.youtube.com/@Brackeys" target="_blank">Brackeys</a> for guiding me). The second feature was a turn-based battle system. I am a huge Pokémon fan, so when I saw a video by Brackeys revolving around a similar turn-based battle system, I knew that I wanted to incorporate it into my game. I followed along with the video, but it didn't create the battle system exactly how I wanted it to be implemented. I wanted to add a third option for the player to select mid-battle: an option to flee. The problem with this was that I had no idea how to go about adding a new button that would display the proper message when pressed and end the battle. I spent many hours trying to program that additional button, and eventually, I got it to work perfectly. I will never forget how excited I was the first time the button worked and how proud I was of myself for figuring out how to do it on my own. That was one of the moments that made me realize how cool programming could be and made me want to learn more about it.
+                        </p>
+
+                        <p>
+                            <ul style="list-style-type: none;">
+                                <li>
+                                    <a href="Documents/SciRes/Senior Year Presentation.pdf" target="_blank">
+                                        Link to Presentation Slideshow
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="Documents/SciRes/Senior Year Presentation Script.pdf" target="_blank">
+                                        Link to Presentation Script
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </p>
+
+                    </td>
+                </tr>
+
+                <!--Row 1 of Images-->
+                <tr>
+
+                    <td>
+
+                        <div class="image-container">
+
+                            <a href="Images/SciRes/2-Title.png" target="_blank">
+                                <img src="Images/SciRes/2-Title.png" alt="Title" class="ss" />
+                                <div class="tooltip">
+                                    Title screen for the RPG game
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </td>
+
+                    <td>
+                        <div class="image-container">
+
+                            <a href="Images/SciRes/2-World.png" target="_blank">
+                                <img src="Images/SciRes/2-World.png" alt="World" class="ss" />
+                                <div class="tooltip">
+                                    The world I created for the game
+                                </div>
+                            </a>
+
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="image-container">
+
+                            <a href="Images/SciRes/2-TileSet.png" target="_blank">
+                                <img src="Images/SciRes/2-TileSet.png" alt="TileSet" class="ss" />
+                                <div class="tooltip">
+                                    The tileset from which the world is built from
+                                </div>
+                            </a>
+
+                        </div>
+                    </td>
+
+
+                </tr>
+
+                <!--Row 2 of Images-->
+                <tr>
+
+                    <td>
+                        <div class="image-container">
+
+                            <a href="Images/SciRes/2-Quest.png" target="_blank">
+                                <img src="Images/SciRes/2-Quest.png" alt="Quest" class="ss" />
+                                <div class="tooltip">
+                                    The middle of a questline I created
+                                </div>
+                            </a>
+
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="image-container">
+
+                            <a href="Images/SciRes/2-QuestLog.png" target="_blank">
+                                <img src="Images/SciRes/2-QuestLog.png" alt="QuestLog" class="ss" />
+                                <div class="tooltip">
+                                    The scripting behind said questline
+                                </div>
+                            </a>
+
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="image-container">
+
+                            <a href="Images/SciRes/2-Inventory.gif" target="_blank">
+                                <img src="Images/SciRes/2-Inventory.gif" alt="Inventory" class="ss" />
+                                <div class="tooltip">
+                                    A GIF of the inventory system at work
+                                </div>
+                            </a>
+
+                        </div>
+                    </td>
+
+                </tr>
+
+                <!--Row 3 of Images-->
+                <tr>
+
+                    <td>
+                        <div class="image-container">
+
+                            <a href="Images/SciRes/2-UnityWorld.png" target="_blank">
+                                <img src="Images/SciRes/2-UnityWorld.png" alt="Inventory" class="ss" />
+                                <div class="tooltip">
+                                    Some assets of the game viewed in UNITY
+                                </div>
+                            </a>
+
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="image-container">
+
+                            <a href="Images/SciRes/2-BattleSystemScript.png" target="_blank">
+                                <img src="Images/SciRes/2-BattleSystemScript.png" alt="Battle" class="ss" />
+                                <div class="tooltip">
+                                    Part of the script that controls the battle system
+                                </div>
+                            </a>
+
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="image-container">
+
+                            <a href="Images/SciRes/2-Battle.gif" target="_blank">
+                                <img src="Images/SciRes/2-Battle.gif" alt="Battle" class="ss" />
+                                <div class="tooltip">
+                                    A GIF of an in-game battle
+                                </div>
+                            </a>
+
+                        </div>
+                    </td>
+
+                </tr>
+
+
+            </table>
+
+        </div>
+
+
+    </body>
+
+
+</html>
