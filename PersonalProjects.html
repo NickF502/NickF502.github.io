@@ -113,11 +113,6 @@
                     <div class="Project"
                          id="Plinko">
 
-                        <!-- Link to Plinko Source Code   -->
-                        <p style="text-align: center;">
-                            <a href="Personal Projects/Plinko.py" target="_blank" download="Personal Projects/Plinko.py">Link to Plinko Source Code</a>
-                        </p>
-
                         <h3>Background</h3>
                         <p>
                             In December 2021, I began to teach myself Python by watching YouTube videos and copying the programs in tutorials. After completing a few multi-hour videos over a few weeks, I decided in early January 2022 that a good way to test what I had learned would be to start a project from scratch and see how much content I remembered. I knew I wanted to create my own version of a classic game, such as Snake, Tetris, or Tic-Tac-Toe, but I felt that those were overdone. I wanted to create something that I hadn't watched other people create already, so I decided to create a Plinko game.
@@ -174,11 +169,6 @@
                 <td>
                     <div class="Project"
                          id="tictactoe">
-
-                        <!-- Link to Tic-Tac-Toe Source Code   -->
-                        <p style="text-align: center;">
-                            <a href="Personal Projects/Tic-Tac-Toe.py" target="_blank" download="Personal Projects/Tic-Tac-Toe.py">Link to Tic-Tac-Toe Source Code</a>
-                        </p>
 
                         <h3>Background</h3>
                         <p>
@@ -248,21 +238,6 @@
                 <td style="text-align: center;">
                     <div class="Project" id="baseball-sim">
 
-                        <!-- Link to Baseball Simulator Source Code   -->
-                        <p style="text-align: center;">
-                            <ul style="list-style-type: none;">
-                                <li>
-                                    <a href="Personal Projects/BaseballSim.py" target="_blank" download="Personal Projects/BaseballSim.py">Link to Baseball Simulator Source Code</a>
-                                </li>
-
-                                <li>
-                                    <a href="Personal Projects/player_rosters.py" target="_blank" download="Personal Projects/player_rosters.py">Link to player_rosters.py</a>
-                                </li>
-
-                            </ul>
-                        </p>
-
-
                         <h3>Background</h3>
 
                         <p>
@@ -331,83 +306,6 @@
 
 
 
-        <h2>Word Processor</h2>
-        <table class="project-table" id="processor">
-
-            <tr>
-
-                <!-- Left Column -->
-                <td class="gamepics">
-
-                    <!-- Make a zoom-able, clickable thumbnail -->
-                    <a href="Images/WordProcessor/WordProcessor.png" target="_blank">
-                        <img src="Images/WordProcessor/WordProcessor.png" alt="WordProcessor Thumbnail" id="thumbnail" />
-                    </a>
-
-                    <a href="Images/WordProcessor/WPMenu.png" target="_blank">
-                        <img src="Images/WordProcessor/WPMenu.png" alt="WordProcessor Menu" id="thumbnail" />
-                    </a>
-
-                    <a href="Images/WordProcessor/WPResume.png" target="_blank">
-                        <img src="Images/WordProcessor/WPResume.png" alt="WordProcessor Resume" id="thumbnail" />
-                    </a>
-
-                    <a href="Images/WordProcessor/WP.gif" target="_blank">
-                        <img src="Images/WordProcessor/WP.gif" alt="WordProcessor GIF" id="thumbnail" />
-                    </a>
-
-                </td>
-
-                <!-- Right Column -->
-                <td>
-
-                    
-                    <div class="Project" id="processor">
-
-                        <!-- Link to Word Processor Source Code-->
-                        <p style="text-align: center;">
-                            <a href="Personal Projects/WordProcessor.zip" target="_blank" download="Personal Projects/WordProcessor.zip">Link to Word Processor Project</a>
-                        </p>
-
-                        <h3>Background</h3>
-                        <p>
-                            After taking an introductory course in Java, it quickly became my language of preference. Not only did I love the Eclipse IDE, but the syntax and structure of the language made it easy to understand and fun to use. During one particular lecture, I learned about Event Driven Programming, Event Handlers, and JMenus. It was the first time I learned how to create a program that allows for extensive user interaction. Being able to create a menu bar and create buttons that would execute commands, I knew what my first project would be when summer break began. I wanted to make a basic text processor, similar to NotePad.
-                        </p>
-
-                        <h3>Concept</h3>
-                        <p>
-                            The basic features of a text processor include creating, loading, and saving text files. Most include many other features, including the ability to print, copy and paste text, find and replace phrases, and zoom in and out. Text processors such as Google Docs or Microsoft Word have a myriad of other capabilities, including placing images, special characters, tables, and charts, as well as text formatting. This was going to be a long-term project, so I decided that I would get the basics implemented and then slowly add more features when I found the time between projects.
-                        </p>
-
-                        <h3>Process</h3>
-                        <p>
-                            To start, I created a simple JFrame with a single TextArea object. At the top, I created a JMenuBar with two JMenu objects, one for "File" and the other for "Edit". To each, I added their necessary operations, such as "Open" and "Save", and attached an event handler file to each. The FileMenuHandler manages file loading, saving, and closing, while the EditMenuHandler controls commands such as copy and paste. During my Java course, I learned a lot about file I/O, so I was able to utilize code from previous projects with a few adjustments. Setting up these basics of the JFrame was simple, as it was all stuff I had done during the course. Adding the methods, on the other hand, was something new. Despite that, I didn't run into too much trouble.
-                        </p>
-
-                        <p>
-                            Locating and selecting files to open was easy thanks to the JFileChooser, and reading in the text was simple as well thanks to the experience I obtained in my course. Creating a method to close the file was also simple. I wanted to implement a feature that prompted the user to save before exiting, and this required nothing more than a few JOptionPanes and an if-else statement to filter through the user's choices. I also added a "Force Close" option that exits immediately without saving. It serves mostly as an escape option for myself during development since I grew tired of having to go through all the messages asking me to save, but I may leave it in. The most involved method to implement was the "Save" option. The code behind saving the file was simple, as it was nothing more than having the user select a destination on their computer, naming the file, and using a FileWriter to place the text in the JFrame into the selected destination. However, because the save method was used in different contexts, I needed to make it as flexible as possible. After some thought, I decided to have the method take in a boolean parameter to determine whether the file should be closed after saving was completed or not. This required me to go through the other methods and update each time I called the save method to include this boolean. By no means was it difficult, but it did take some time to ensure that everything worked as intended.
-                        </p>
-
-                        <p>
-                            The next step for this project is to develop the Edit Menu. Adding copy/cut/paste, undo and redo, find, find and replace, and other related methods will be the next step. This is a lengthy project and is still very much a work in progress, so check back for future updates.
-                        </p>
-
-                        <!--<h3>Reflection</h3>
-                <p>
-                    Awaiting Completion...
-                </p>-->
-
-                    </div>
-
-                </td>
-
-            </tr>
-
-
-        </table>
-
-
-
         <h2>Baseball Clicker</h2>
         <table class="project-table" id="baseball-clicker">
 
@@ -443,11 +341,6 @@
                 <td>
 
                     <div class="Project" id="baseball-clicker">
-
-                        <!-- Link to Baseball Clicker Source Code-->
-                        <p style="text-align: center;">
-                            <a href="Personal Projects/BaseballClicker.zip" download="BaseballClicker.zip">Link to Baseball Clicker Source Code</a>
-                        </p>
 
                         <h3>Background</h3>
                         <p>
