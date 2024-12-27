@@ -83,8 +83,8 @@
         </nav>
 
 
-
-        <h2>Plinko</h2>
+        <div id="Plinko">
+        <h2><a href="https://github.com/NickF502/Projects/tree/main/Personal%20Projects/Plinko">Plinko</a></h2>
         <table class="project-table" id="plinko">
             <tr>
 
@@ -115,22 +115,36 @@
 
                         <h3>Background</h3>
                         <p>
-                            In December 2021, I began to teach myself Python by watching YouTube videos and copying the programs in tutorials. After completing a few multi-hour videos over a few weeks, I decided in early January 2022 that a good way to test what I had learned would be to start a project from scratch and see how much content I remembered. I knew I wanted to create my own version of a classic game, such as Snake, Tetris, or Tic-Tac-Toe, but I felt that those were overdone. I wanted to create something that I hadn't watched other people create already, so I decided to create a Plinko game.
+                            In December 2021, to prepare for a Python course I would be taking the following semester, I began to teach myself Python
+                            by watching YouTube videos and copying the tutorials (including the creation of a version of 
+                            <a href="https://github.com/NickF502/Projects/tree/main/Personal%20Projects/Pong">Pong</a>). After getting the basics down,
+                            I decided in early January 2022 to create a game to see what I had learned. I ultimately decided to create a Plinko game.
                         </p>
 
-                        <h3>Concept</h3>
+                        <h3>How To Play</h3>
                         <p>
-                            The concept of Plinko is simple. The player, starting with some amount of money, places a wager on their chip. Then, the player selects one of several slots to drop a chip into. The chip falls down a board of pegs, bouncing left and right randomly until it reaches the bottom. Depending on the horizontal position of the chip, it will fall into one of several slots, each with a different multiplier. Based on the original wager placed at the beginning of the round, the player will either gain or lose money. The player can then change the wager if they wish and continue playing or quit.
+                            Use the up and down arrow keys (or W/S) to change the wager amount. Use the left and right arrow keys (or A/D) to move the
+                            the ball's starting position. Use the space bar to drop the ball. The ball will drop down the board and bounce left and right,
+                            until reaching one of the goal slots. The placed wager will be multiplied by the goal slot's reward and deposited into the
+                            player's "Money".
                         </p>
 
                         <h3>Process</h3>
                         <p>
-                            Being that this was my first real project, I knew that I would run into a lot of problems. I had heard people say "90% of programming is debugging", so I knew issues would arise fast. Sure enough, I ran into countless bugs that brought my workflow to a standstill. Without having any experience in debugging code, I had to fumble my way through these problems and create as many "good enough" solutions as I could. I looked up error messages, read forum posts, made changes, and did everything I could think of to just get my program running again. It was winter break, so I'd spend all day on my laptop working on my Plinko game, trying to make it as quality as I could while fighting off all these errors. After about two straight weeks of working on the game, I had a product that I was satisfied with. It didn't look the best, nor did it work the best. Despite that, I was proud of what I had created in such a short amount of time. I'd spend a few hours every once in a while cleaning up the source code, fixing new bugs that I'd find, and polishing it up before declaring it complete about a month after starting.
+                            I knew I would struggle with my first project, and I was right. The biggest problem was debugging - I hadn't yet learned
+                            how to debug code, so I didn't know how to fix my problems. More than 80% of the time I spent on this was fixing errors,
+                            and those fixes were more like "patches". I spent two weeks working on this project, and I was proud to both see a working
+                            product and know that I had learned something. I spent another two weeks making the occasional adjustment or change, and 
+                            after one month of production, I called the project complete.
                         </p>
 
-                        <h3>Reflection</h3>
+                        <h3>Looking Back</h3>
                         <p>
-                            Looking back at the source code now, about a year and a half later, two things stand out drastically to me. The first is that my knowledge of data structures has increased dramatically. While I still have a long way to go in that field, there are many areas I see for improvement, such as lengthy if-else blocks that could have been HashMaps. More notable, however, is my use of comments, or lack thereof. Early in my programming career, I despised commenting my source code. I found it to be a waste of time. The code was simple enough that anyone could understand it. I figured that when I eventually came back to this with much more knowledge, I would have no problem reading through this code. It turns out that I had no idea how important commenting was. After looking through the source code, it feels like I didn't create this program. Although my commenting practices have gotten much better, this brought to my attention just how important it is to properly document the process of programming through comments. Moving forward, I will pay much more attention to commenting to assist in clarity.
+                            For my first project, I think the end result is pretty good. The game works pretty well. However, there are many things that
+                            should have been different. For one, it is almost impossible to lose money because the goal rewards are not placed
+                            well. This makes the game very simple and not very fun to play. However, the biggest problem is the code itself. There are very
+                            few comments, and it is hard to figure out what code does what. Thankfully, my variable and function names are fairly descriptive,
+                            so it isn't impossible to follow along. Overall, plenty of room for improvement, but a good start.
                         </p>
                     </div>
 
@@ -139,10 +153,11 @@
             </tr>
 
         </table>
+        </div>
 
 
-
-        <h2>Tic-Tac-Toe</h2>
+        <div id="TicTacToe">
+        <h2><a href="https://github.com/NickF502/Projects/tree/main/Personal%20Projects/Tic-Tac-Toe">Tic-Tac-Toe</a></h2>
         <table class="project-table" id="tictactoe">
             <tr>
 
@@ -172,22 +187,36 @@
 
                         <h3>Background</h3>
                         <p>
-                            Feeling confident in my abilities, I immediately set out on my next game. At the end of January 2022, I started my second project a Tic-Tac-Toe game. I assumed that this would be a simple project since every Google search for "beginner CS projects" provides Tic-Tac-Toe as one of the first results. Going in, I felt confident that I would complete this in only a few days and then move to something else. It turned out, however, that the simple game of "Connect 3" wasn't going to be that easy.
+                            In January 2022, immediately after finishing Plinko, I began working on a Tic-Tac-Toe game. I felt confident that I could manage it,
+                            especially since this was a common beginner project. I assumed this would take me a week at most, and that I could finish it before
+                            classes started back up.
                         </p>
 
-                        <h3>Concept</h3>
+                        <h3>How To Play</h3>
                         <p>
-                            Two players alternate turns of placing their symbol, X or O, in a 3x3 grid. Whichever player can place three of their symbols across the board, be it horizontally, vertically, or diagonally, is the winner. It is a very simple game to play, which makes it a common project for beginner developers to create.
+                            Two players alternate placing their symbol, X or O, in a 3x3 grid using "WASD" and the space bar. The starting player is randomized.
+                            Whichever player can place three of their symbols across the board horizontally, vertically, or diagonally is the winner.
                         </p>
 
                         <h3>Process</h3>
                         <p>
-                            Many aspects of the game were simple. Drawing a shape on a screen was something I became very familiar with throughout the development of my Plinko game. Setting up the board and pieces took no time at all. Likewise, creating the controls was also very simple. However, this project required something that the previous game did not: memory storage. I needed to figure out a way to keep track of which pieces were placed where, check for win conditions, and deny placement on occupied tiles. I ended up using lists to store everything because that was all I knew at the time. Calculating coordinates for the spaces was tedious, but once I did, I had no issues programming the movement of the pieces. The part of this project that gave me the most difficulty was checking for win conditions. Having triply nested lists made it nearly impossible to follow what was being evaluated at any given time, and the lack of comments only made things more tricky. Once I was able to solve that issue, new ones arose. I recall struggling for hours trying to get the selected square to be highlighted yellow, and as soon as I figured it out, the pieces would disappear when placed. It felt as if every time I fixed one thing, a new issue would arise. It appears that it got to a point where I gave up, as there is a feature in my code that is supposed to change the color of the screen to whichever team's turn it is, but it does not work. While I could fix it or remove it, I prefer to leave things as they were when I finished them. Not only does it show my shortcomings at the time, but it also serves as a symbol of growth and experience when looking back.
+                            Some parts of the game were easy to implement, such as drawing shapes, as I had just learned these skills working on Plinko.
+                            However, keeping track of where the players placed their symbols was not something I knew how to do. I needed to do this so I could
+                            detect if a player had won and ensure that pieces couldn't be placed on top of one another. I ended up using lists to store
+                            coordinates because that was all I knew how to do. This made things much more difficult to work with, a problem made worse by the 
+                            fact that, once again, I refused to comment my code. I remember thinking to myself, "I wrote this, I know exactly what everything 
+                            does." I wish I could slap my younger self. If I had added comments, I bet most of the time I spent debugging would have disappeared.
+                            Bugs began to build on top of one another, and it must have gotten to the point where I couldn't be bothered anymore. I ended up
+                            leaving some features unimplemented in this game. 
                         </p>
 
-                        <h3>Reflection</h3>
+                        <h3>Looking Back</h3>
                         <p>
-                            After reviewing the code, while I did notice some improvements such as better organization, it was quite clear that I had a lot of improvement still in me. At this point, I still knew nothing about data structures, so I used what I knew. I stored everything in lists and iterated through them constantly to check for conditions that could not possibly be met at certain times. It would have been much more efficient to only check these lists when the check could return positive. I also called a function multiple times when I could have written the function to take in a list. I'm not sure if I even knew that functions could accept lists as a parameter at the time. Despite all this, the area for most improvement remained commenting. My documentation of this project was far worse than that of Plinko. Going through this code, there are multiple blocks of code that I needed to go through several times to understand its function. There are only 12 comments in 200+ lines of code, they are all incredibly vague, and none of them explain what any particular line of code does, but rather what the block (and in some cases blocks) does. My biggest takeaway from reviewing this code is still a focus on commenting, but also creating better names for my variables. I have two variables named "counter" in consecutive blocks, Turtles named "marker" and "highlighter", and many variables that are the same word with increasing numbers at the end. These are all things that I have continued to improve upon as I progress.
+                            This project reminds me even today to never be over-confident and stay humble. For my skill level at the time, this Tic-Tac-Toe game is 
+                            okay. But as I looked back through the code, I cringed at how much unnecessary code was written - triply nested loops, pointless if-else 
+                            statements, no data structures, no comments - there is so much that can be improved upon. However, it also serves as a reminder of how 
+                            much better I've gotten - the only reason I know that this project isn't good is because I've sinced learned better ways to do it. 
+                            Although this project is probably my least favorite, it serves as my best lesson, and when I struggle on projects now, I think back to it
                         </p>
 
 
@@ -197,10 +226,11 @@
             </tr>
 
         </table>
+        </div>
 
 
-
-        <h2>Baseball Simulator</h2>
+        <div id="BaseballSimulator">
+        <h2><a href="https://github.com/NickF502/Projects/tree/main/Personal%20Projects/Baseball%20Simulator">Baseball Simulator</a></h2>
         <table class="project-table" id="baseball-sim">
             <tr>
 
@@ -241,8 +271,11 @@
                         <h3>Background</h3>
 
                         <p>
-                            After winter break concluded, I began my final semester at Stony Brook University. I did not create any personal projects at this time, as I was focused on my academic studies. However, I was constantly thinking of what I wanted my next project to be when I had more time in the summer. Being an avid baseball fan, I had always wanted to create baseball-themed projects. Specifically, I wanted to create a baseball game. I knew I didn't have the ability to make a real baseball game, like MLB The Show, so I took everything I learned from my class and my previous projects and created what I consider my first project, a baseball simulator.
+                            Being a huge baseball fan, I always wanted to create baseball-themed projects. I knew I couldn't create an actual baseball game like 
+                            MLB The Show, but I figured I could simulate a baseball game using statsitics. I decided I would try to accomplish this for my next project.
                         </p>
+
+                        <!-- TODO FIXME Pick up here -->
 
                         <h3>Concept</h3>
 
@@ -303,10 +336,11 @@
             </tr>
 
         </table>
+        </div>
 
 
-
-        <h2>Baseball Clicker</h2>
+        <div id="BaseballClicker">
+        <h2><a href="https://github.com/NickF502/Projects/tree/main/Personal%20Projects/Baseball%20Clicker">Baseball Clicker</a></h2>
         <table class="project-table" id="baseball-clicker">
 
             <tr>
@@ -410,6 +444,33 @@
 
 
         </table>
+        </div>
+
+
+
+
+        <div id="Gacha">
+            <h2><a href="https://github.com/NickF502/Projects/tree/main/Personal%20Projects/Gacha%20Simulator">Gacha Simulator</a></h2>
+            <table class="project-table" id="gacha-simulator">
+    
+                <tr>
+    
+                    <!-- Right Column -->
+                    <td>
+    
+                        <div class="Project" id="gacha-simulator">
+    
+                            <h3>Code is available at the link above. Check back soon for my account!</h3>   
+    
+                        </div>
+                    </td>
+    
+                </tr>
+    
+    
+            </table>
+            </div>
+
 
 
 
